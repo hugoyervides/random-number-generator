@@ -5,7 +5,7 @@
 //funcion que regresa numero random
 int getRandomNumber(int inf, int sup){
     //Caculamos el tamanio que necesitamos en nuestro arreglo
-    return inf + (int)time(NULL) % sup-inf+1;
+    return inf + (int)time(NULL) % (sup-inf+1);
 }
 
 int main()
